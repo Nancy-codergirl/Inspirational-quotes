@@ -1,1 +1,10 @@
-<p>details works!</p>
+<div class="quotes">
+</div>
+<button id="upvote" class="btn btn-success"(click)="onUpVote()" ><i class="bi bi-hand-thumbs-up"></i>Upvote &nbsp; {{upvote}}</button> 
+<button class="btn btn-danger" (click)="onDownVote()"><i class="bi bi-hand-thumbs-down"></i>Downvote &nbsp; {{downvote}}</button>
+
+<div id="post-details"  class="mt-3">
+    <h6>Author: <small>{{quote.author}}</small></h6>
+    <h6>Posted: <small>{{quote.date | time}}</small></h6>
+    <h6>Posted by: <small>{{quote.name}}</small></h6>
+</div>

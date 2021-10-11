@@ -1,1 +1,25 @@
-<p>quotes works!</p>
+<div class="app-quotes">    
+    <div class="row">
+        <div class="col-md-8">
+            <ng-container *ngFor="let quote of quotes; let i = index ">
+                <div class="card mb-3" style="width:80%" >
+                    <div class="card-body">
+                        <h2 class="card-title bg-light " appHighlightquote>{{quote.topic}} <app-delete-btn (deleteQuote)='deleteTheQuote($event, i)'></app-delete-btn></h2>
+                        <p class="card-text" id="quote">"{{quote.quote}}"</p> <br>
+                    </div>
+                    <div class="card-footer">
+                        <app-quote-details [quote]='quote'  ></app-quote-details>
+                    </div>
+                </div>
+            </ng-container>
+            <p *ngIf='quotes.length < 1'>You do not have any quotes</p>
+            
+        </div> 
+        <div class="col-md-4">
+           <app-quote-form (onAddQuote)="addQuote($event)"></app-quote-form>
+        </div>
+    </div>
+    
+
+    
+</div>
