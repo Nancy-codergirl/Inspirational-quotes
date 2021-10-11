@@ -1,6 +1,27 @@
-<div *ngFor="let quote of quotes">
+<div *ngFor="let quote of quotes; let i=index">
     <p>{{quote.Title}}</p>
     <p>{{quote.Author}}</p>
     <p>{{quote.quote}}</p>
+    <p>{{quote.upvote}}</p>
+    <p>{{quote.downvote}}</p>
+<button type="button" (click)="upvote(i)">upvote</button>
+<button type="button" (click)="downvote(i)">downvote</button>
 </div>
+<form  (ngSubmit)="Onsubmit()">
+    <div class="mb-3">
+  <label class="form-label">Title</label>
+  <input type="text"[(ngModel)]="Title" name="title" class="form-control">
+</div>
+<div class="mb-3">
+  <label class="form-label">Quote</label>
+  <input type="text" [(ngModel)]="quotetext" name="quotetext" class="form-control" >
+</div>
+  <div class="mb-3">
+  <label class="form-label">Author</label>
+  <input type="text" [(ngModel)]="Author" name="author" class="form-control">
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
 
