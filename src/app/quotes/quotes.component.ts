@@ -29,8 +29,9 @@ this.quotes[index].upvote++
 downvote(index:number){
 this.quotes[index].downvote++
 }
-  ngOnInit(): void {
 
-  }
+
+ngOnInit(): void {
+}
 
 }
