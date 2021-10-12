@@ -4,7 +4,7 @@ An angular application that allows people to see and post quotes, vote up or dow
 #### This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
 ### Check out the website :stars:
-https://sling254.github.io/Quote-ratings/
+https://nancy-codergirl.github.io/Inspirational-quotes/
 
 # Permissions
 - Internet
