@@ -13,8 +13,8 @@ export class QuotesComponent implements OnInit {
   Author!:string
   quotetext!:string
 
-  constructor() { this.quote={ Title:"Hard-work",Author:"Socrates",quote:"Hardwork pays",upvote:0,downvote:0}
-  this.quote2={Title:"Hard-work",Author:"Socrates",quote:"Hardwork pays",upvote:0,downvote:0,}
+  constructor() { this.quote={ Title:"Hard-work",Author:"Nancy M",quote:"Hardwork beats talent",upvote:0,downvote:0}
+  this.quote2={Title:"Patience",Author:"Socrates",quote:"“Patience is not the ability to wait, but the ability to keep a good attitude while waiting.”",upvote:0,downvote:0,}
   this.quotes.push(this.quote)
   this.quotes.push(this.quote2)
 }
