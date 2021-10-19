@@ -1,4 +1,4 @@
-# Inspirational quotes
+# Inspirational-quotes
 
 An angular application that allows people to see and post quotes, vote up or down on quotes and finally add their own quotes
 #### This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
